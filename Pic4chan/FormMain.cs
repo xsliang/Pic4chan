@@ -15,6 +15,10 @@ namespace Pic4chan
 {
     public partial class FormMain : Form
     {
+        private string BaseUrl = string.Empty;
+
+        private string SelectProgram = "ck/";
+
         public FormMain()
         {
             InitializeComponent();
@@ -26,11 +30,9 @@ namespace Pic4chan
             {
                 resultText.Text = string.Empty;
                 HttpWebRequest httpWebRequest = WebRequest.CreateHttp(url);
-                //httpWebRequest.BeginGetResponse(new AsyncCallback(CallBackMethod), httpWebRequest);
                 WebResponse webresponse = httpWebRequest.GetResponse();
                 StreamReader sr = new StreamReader(webresponse.GetResponseStream());
                 List<string> result = ProcessHtml(sr.ReadLine());
-                //resultText.Text = sr.ReadLine();
                 foreach (var item in result)
                 {
                     GetPictrueFormNet(item);
@@ -89,7 +91,32 @@ namespace Pic4chan
 
         private void OK_Click(object sender, EventArgs e)
         {
-            GetWebInfo(url.Text);
+            GetWebInfo(BaseUrl + SelectProgram);
+        }
+
+        private void ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem selectItem = (sender as ToolStripMenuItem);
+            switch (selectItem.Text)
+            {
+                case "Video Games":
+                    SelectProgram = "v/";
+                    break;
+                case "Oekaki":
+                    SelectProgram = "i/";
+                    break;
+                case "Travel":
+                    SelectProgram = "trv/";
+                    break;
+                default:
+                    SelectProgram = "ck/";
+                    break;
+            }
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            BaseUrl = System.Configuration.ConfigurationSettings.AppSettings.Get("url");
         }
     }
 }
