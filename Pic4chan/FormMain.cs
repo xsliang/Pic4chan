@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,11 +25,27 @@ namespace Pic4chan
             InitializeComponent();
         }
 
-        private void GetWebInfo(string url)
+        delegate void Callback(string msg);
+
+        private void SetMessage(string msg)
         {
+            if (this.InvokeRequired)
+            {
+                Callback d = new Callback(SetMessage);
+                this.Invoke(d, new object[] { msg });
+            }
+            else
+            {
+                this.resultText.Text = msg;
+            }
+        }
+
+        private void GetWebInfo(object o)
+        {
+            string url = o.ToString();
             try
             {
-                resultText.Text = string.Empty;
+                
                 HttpWebRequest httpWebRequest = WebRequest.CreateHttp(url);
                 WebResponse webresponse = httpWebRequest.GetResponse();
                 StreamReader sr = new StreamReader(webresponse.GetResponseStream());
@@ -36,7 +53,8 @@ namespace Pic4chan
                 foreach (var item in result)
                 {
                     GetPictrueFormNet(item);
-                    resultText.Text = resultText.Text + "\r\n" + item;
+
+                    SetMessage(resultText.Text + "\r\n" + item);
                 }
 
                 MessageBox.Show("Completed!");
@@ -91,7 +109,11 @@ namespace Pic4chan
 
         private void OK_Click(object sender, EventArgs e)
         {
-            GetWebInfo(BaseUrl + SelectProgram);
+            Thread nt = new Thread(GetWebInfo);
+            resultText.Text = string.Empty;
+            nt.Start(BaseUrl + SelectProgram);
+            //GetWebInfo(BaseUrl + SelectProgram);
+
         }
 
         private void ToolStripMenuItem_Click(object sender, EventArgs e)
