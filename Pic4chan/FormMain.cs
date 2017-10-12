@@ -45,8 +45,10 @@ namespace Pic4chan
             string url = o.ToString();
             try
             {
-                
+
                 HttpWebRequest httpWebRequest = WebRequest.CreateHttp(url);
+                httpWebRequest.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0";
+                httpWebRequest.Method = "GET";
                 WebResponse webresponse = httpWebRequest.GetResponse();
                 StreamReader sr = new StreamReader(webresponse.GetResponseStream());
                 List<string> result = ProcessHtml(sr.ReadLine());
@@ -76,10 +78,13 @@ namespace Pic4chan
             try
             {
                 HttpWebRequest httpWebRequest = WebRequest.CreateHttp("http:" + item);
+                httpWebRequest.UserAgent = "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:56.0) Gecko/20100101 Firefox/56.0";
+                httpWebRequest.Method = "GET";
                 WebResponse webresponse = httpWebRequest.GetResponse();
                 //StreamReader sr = new StreamReader(webresponse.GetResponseStream());
                 Image image = Image.FromStream(webresponse.GetResponseStream());
                 image.Save("C:\\" + item.Split('/')[item.Split('/').Length - 1]);
+                Thread.Sleep(10000);
             }
             catch (Exception ex)
             {
@@ -121,6 +126,9 @@ namespace Pic4chan
             ToolStripMenuItem selectItem = (sender as ToolStripMenuItem);
             switch (selectItem.Text)
             {
+                case "Anime && Manga":
+                    SelectProgram = "a/";
+                    break;
                 case "Video Games":
                     SelectProgram = "v/";
                     break;
