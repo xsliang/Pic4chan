@@ -138,15 +138,28 @@ namespace Pic4chan
                 case "Travel":
                     SelectProgram = "trv/";
                     break;
+                case "Food && Cooking":
+                    SelectProgram = "ck/";
+                    break;
                 default:
                     SelectProgram = "ck/";
                     break;
             }
+
+            if (SelectProgram== "ck/")
+            {
+                lbSelectItem.Text = "Food && Cooking";
+            }
+            else
+            {
+                lbSelectItem.Text = selectItem.Text;
+            }
+            
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            BaseUrl = System.Configuration.ConfigurationSettings.AppSettings.Get("url");
+            BaseUrl = System.Configuration.ConfigurationManager.AppSettings["url"];
         }
     }
 }

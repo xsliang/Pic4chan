@@ -35,13 +35,6 @@
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.japaneseCultureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animeMangaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.interestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.creativeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oekakiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.travelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.miscNSFWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adultNSFWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animeCuteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.animeWallpapersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,11 +44,20 @@
             this.transportationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otakuCultureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.videoGamesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.randomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sexyBeautifulWomenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.businessFinanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.papercraftOrigamiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.interestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comicsCartoonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.creativeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oekakiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.papercraftOrigamiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.businessFinanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.travelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miscNSFWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.randomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adultNSFWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sexyBeautifulWomenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbSelectItem = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMS)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -141,62 +143,6 @@
             this.animeMangaToolStripMenuItem.Text = "Anime && Manga";
             this.animeMangaToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
             // 
-            // interestsToolStripMenuItem
-            // 
-            this.interestsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.comicsCartoonsToolStripMenuItem});
-            this.interestsToolStripMenuItem.Name = "interestsToolStripMenuItem";
-            this.interestsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.interestsToolStripMenuItem.Text = "Interests";
-            // 
-            // creativeToolStripMenuItem
-            // 
-            this.creativeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.oekakiToolStripMenuItem,
-            this.papercraftOrigamiToolStripMenuItem});
-            this.creativeToolStripMenuItem.Name = "creativeToolStripMenuItem";
-            this.creativeToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.creativeToolStripMenuItem.Text = "Creative";
-            // 
-            // oekakiToolStripMenuItem
-            // 
-            this.oekakiToolStripMenuItem.Name = "oekakiToolStripMenuItem";
-            this.oekakiToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.oekakiToolStripMenuItem.Text = "Oekaki";
-            this.oekakiToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
-            // 
-            // otherToolStripMenuItem
-            // 
-            this.otherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.businessFinanceToolStripMenuItem,
-            this.travelToolStripMenuItem});
-            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
-            this.otherToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.otherToolStripMenuItem.Text = "Other";
-            // 
-            // travelToolStripMenuItem
-            // 
-            this.travelToolStripMenuItem.Name = "travelToolStripMenuItem";
-            this.travelToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.travelToolStripMenuItem.Text = "Travel";
-            this.travelToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
-            // 
-            // miscNSFWToolStripMenuItem
-            // 
-            this.miscNSFWToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.randomToolStripMenuItem});
-            this.miscNSFWToolStripMenuItem.Name = "miscNSFWToolStripMenuItem";
-            this.miscNSFWToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.miscNSFWToolStripMenuItem.Text = "Misc. (NSFW)";
-            // 
-            // adultNSFWToolStripMenuItem
-            // 
-            this.adultNSFWToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sexyBeautifulWomenToolStripMenuItem});
-            this.adultNSFWToolStripMenuItem.Name = "adultNSFWToolStripMenuItem";
-            this.adultNSFWToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.adultNSFWToolStripMenuItem.Text = "Adult (NSFW)";
-            // 
             // animeCuteToolStripMenuItem
             // 
             this.animeCuteToolStripMenuItem.Name = "animeCuteToolStripMenuItem";
@@ -251,29 +197,13 @@
             this.videoGamesToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
             this.videoGamesToolStripMenuItem1.Text = "Video Games";
             // 
-            // randomToolStripMenuItem
+            // interestsToolStripMenuItem
             // 
-            this.randomToolStripMenuItem.Name = "randomToolStripMenuItem";
-            this.randomToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.randomToolStripMenuItem.Text = "Random";
-            // 
-            // sexyBeautifulWomenToolStripMenuItem
-            // 
-            this.sexyBeautifulWomenToolStripMenuItem.Name = "sexyBeautifulWomenToolStripMenuItem";
-            this.sexyBeautifulWomenToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
-            this.sexyBeautifulWomenToolStripMenuItem.Text = "Sexy Beautiful Women";
-            // 
-            // businessFinanceToolStripMenuItem
-            // 
-            this.businessFinanceToolStripMenuItem.Name = "businessFinanceToolStripMenuItem";
-            this.businessFinanceToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.businessFinanceToolStripMenuItem.Text = "Business && Finance";
-            // 
-            // papercraftOrigamiToolStripMenuItem
-            // 
-            this.papercraftOrigamiToolStripMenuItem.Name = "papercraftOrigamiToolStripMenuItem";
-            this.papercraftOrigamiToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.papercraftOrigamiToolStripMenuItem.Text = "Papercraft && Origami";
+            this.interestsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.comicsCartoonsToolStripMenuItem});
+            this.interestsToolStripMenuItem.Name = "interestsToolStripMenuItem";
+            this.interestsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.interestsToolStripMenuItem.Text = "Interests";
             // 
             // comicsCartoonsToolStripMenuItem
             // 
@@ -281,11 +211,103 @@
             this.comicsCartoonsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.comicsCartoonsToolStripMenuItem.Text = "Comics && Cartoons";
             // 
+            // creativeToolStripMenuItem
+            // 
+            this.creativeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oekakiToolStripMenuItem,
+            this.papercraftOrigamiToolStripMenuItem});
+            this.creativeToolStripMenuItem.Name = "creativeToolStripMenuItem";
+            this.creativeToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.creativeToolStripMenuItem.Text = "Creative";
+            // 
+            // oekakiToolStripMenuItem
+            // 
+            this.oekakiToolStripMenuItem.Name = "oekakiToolStripMenuItem";
+            this.oekakiToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.oekakiToolStripMenuItem.Text = "Oekaki";
+            this.oekakiToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            // 
+            // papercraftOrigamiToolStripMenuItem
+            // 
+            this.papercraftOrigamiToolStripMenuItem.Name = "papercraftOrigamiToolStripMenuItem";
+            this.papercraftOrigamiToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.papercraftOrigamiToolStripMenuItem.Text = "Papercraft && Origami";
+            // 
+            // otherToolStripMenuItem
+            // 
+            this.otherToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.businessFinanceToolStripMenuItem,
+            this.travelToolStripMenuItem});
+            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
+            this.otherToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.otherToolStripMenuItem.Text = "Other";
+            // 
+            // businessFinanceToolStripMenuItem
+            // 
+            this.businessFinanceToolStripMenuItem.Name = "businessFinanceToolStripMenuItem";
+            this.businessFinanceToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.businessFinanceToolStripMenuItem.Text = "Business && Finance";
+            // 
+            // travelToolStripMenuItem
+            // 
+            this.travelToolStripMenuItem.Name = "travelToolStripMenuItem";
+            this.travelToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.travelToolStripMenuItem.Text = "Travel";
+            this.travelToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Click);
+            // 
+            // miscNSFWToolStripMenuItem
+            // 
+            this.miscNSFWToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.randomToolStripMenuItem});
+            this.miscNSFWToolStripMenuItem.Name = "miscNSFWToolStripMenuItem";
+            this.miscNSFWToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.miscNSFWToolStripMenuItem.Text = "Misc. (NSFW)";
+            // 
+            // randomToolStripMenuItem
+            // 
+            this.randomToolStripMenuItem.Name = "randomToolStripMenuItem";
+            this.randomToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.randomToolStripMenuItem.Text = "Random";
+            // 
+            // adultNSFWToolStripMenuItem
+            // 
+            this.adultNSFWToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sexyBeautifulWomenToolStripMenuItem});
+            this.adultNSFWToolStripMenuItem.Name = "adultNSFWToolStripMenuItem";
+            this.adultNSFWToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.adultNSFWToolStripMenuItem.Text = "Adult (NSFW)";
+            // 
+            // sexyBeautifulWomenToolStripMenuItem
+            // 
+            this.sexyBeautifulWomenToolStripMenuItem.Name = "sexyBeautifulWomenToolStripMenuItem";
+            this.sexyBeautifulWomenToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
+            this.sexyBeautifulWomenToolStripMenuItem.Text = "Sexy Beautiful Women";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(94, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 12);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Now Category:";
+            // 
+            // lbSelectItem
+            // 
+            this.lbSelectItem.AutoSize = true;
+            this.lbSelectItem.Location = new System.Drawing.Point(180, 34);
+            this.lbSelectItem.Name = "lbSelectItem";
+            this.lbSelectItem.Size = new System.Drawing.Size(85, 12);
+            this.lbSelectItem.TabIndex = 6;
+            this.lbSelectItem.Text = "Anime && Manga";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(763, 308);
+            this.Controls.Add(this.lbSelectItem);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.resultText);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.pcbMS);
@@ -332,6 +354,8 @@
         private System.Windows.Forms.ToolStripMenuItem businessFinanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem randomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sexyBeautifulWomenToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbSelectItem;
     }
 }
 
